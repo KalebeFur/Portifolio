@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfólio — Kalebe Furlan</title>
+
+    <!-- ===== ESTILOS ===== -->
+    <style>
+        :root {
+            --bg: #0e0e0e;
+            --bg-light: #111;
+            --bg-card: #161616;
+            --text: #ffffff;
+            --text-muted: #bdbdbd;
+            --primary: #4da3ff;
+            --border: #333;
+            --radius: 12px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: var(--bg);
+            font-family: Arial, Helvetica, sans-serif;
+            color: var(--text);
+        }
+
+        /* HEADER */
+        header {
+            padding: 50px 20px;
+            background: var(--bg-light);
+            border-bottom: 2px solid #222;
+            text-align: center;
+        }
+        header img {
+            width: 130px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        header h1 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+        header .sub {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+        }
+
+        /* SEÇÃO GERAL */
+        section {
+            width: 100%;
+            padding: 40px 5%;
+            margin: auto;
+        }
+
+        /* TÍTULOS */
+        h2.sec-title {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: var(--primary);
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
+            text-transform: uppercase;
+        }
+
+        /* CARDS */
+        .card {
+            background: var(--bg-card);
+            padding: 25px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            margin-bottom: 35px;
+            transition: 0.2s ease;
+        }
+        .card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 0 20px rgba(0,0,0,0.4);
+        }
+        .card h3 {
+            margin-bottom: 12px;
+        }
+        a.btn {
+            display: inline-block;
+            margin-top: 18px;
+            padding: 12px 20px;
+            background: var(--primary);
+            color: #000;
+            border-radius: 8px;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        a.btn:hover {
+            opacity: .85;
+        }
+
+        /* GRID DE PROJETOS */
+        .projects-grid {
+            display: grid;
+            gap: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        }
+        .proj-card {
+            background: var(--bg-light);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            padding: 20px;
+        }
+        .proj-card h4 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+
+        /* FOOTER */
+        footer {
+            margin-top: 50px;
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            color: var(--text-muted);
+            border-top: 2px solid #222;
+        }
+
+        /* ANIMAÇÃO SUAVE */
+        .fade {
+            animation: fadeIn 0.8s ease both;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="fade">
+    <img src="logo.png" alt="Logo UniFil">
+    <h1>Kalebe Furlan</h1>
+    <p class="sub">Desenvolvedor • Estudante de Tecnologia • Criador de Projetos</p>
+</header>
+
+<section>
+
+    <!-- SOBRE -->
+    <h2 class="sec-title">Sobre Mim</h2>
+    <div class="card fade">
+        <p>
+            Meu nome é <strong>Kalebe</strong>, sou estudante de Ciência da Computação e apaixonado por tecnologia,
+            desenvolvimento e projetos com impacto real. Meu foco é criar soluções eficientes e inteligentes,
+            combinando lógica, criatividade e boas práticas de programação.
+        </p>
+    </div>
+
+    <!-- HABILIDADES -->
+    <h2 class="sec-title">Habilidades & Competências</h2>
+    <div class="card fade">
+        <ul>
+            <li>Desenvolvimento Web — HTML, CSS, JavaScript</li>
+            <li>Python, Java & PHP</li>
+            <li>Banco de Dados (MySQL, PostgreSQL)</li>
+            <li>Automação e integração</li>
+            <li>Engenharia de Software & boas práticas</li>
+            <li>Projetos acadêmicos, pesquisa e resolução de problemas</li>
+            <li>Participação em hackathons e desenvolvimento colaborativo</li>
+        </ul>
+    </div>
+
+    <!-- MEUS REPOSITÓRIOS -->
+    <h2 class="sec-title">Repositórios GitHub</h2>
+    <div class="card fade">
+        <p><a class="btn" href="https://github.com/KalebeFur" target="_blank">GitHub: KalebeFur</a></p>
+        <p><a class="btn" href="https://github.com/KalebeFurlanOliveira" target="_blank">GitHub: KalebeFurlanOliveira</a></p>
+        <p><a class="btn" href="https://github.com/KalebeFurlan" target="_blank">GitHub: KalebeFurlan</a></p>
+    </div>
+
+    <!-- PROJETOS -->
+    <h2 class="sec-title">Projetos do Curso</h2>
+    <div class="projects-grid fade">
+
+        <div class="proj-card">
+            <h4>Cálculo Tania</h4>
+            <p>Exercícios e rotinas de cálculo numérico e funções matemáticas.</p>
+            <a class="btn" href="https://github.com/KalebeFurlan/Calculo_Tania">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Eliminação de Gauss</h4>
+            <p>Implementação do método clássico para sistemas lineares.</p>
+            <a class="btn" href="https://github.com/KalebeFurlan/Eliminacao_gauss">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Sistemas Lineares</h4>
+            <p>Estudo teórico e prático de métodos numéricos.</p>
+            <a class="btn" href="https://github.com/KalebeFurlan/SistemaLineares">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Site de Apostas</h4>
+            <p>Projeto web com lógica interativa e cálculos dinâmicos.</p>
+            <a class="btn" href="https://github.com/KalebeFurlan/site_apostas">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Cálculo Numérico</h4>
+            <p>Métodos clássicos e algoritmos computacionais.</p>
+            <a class="btn" href="https://github.com/KalebeFurlanOliveira/Calculo-Numerico">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Geek Gourmet</h4>
+            <p>Projeto web criativo unindo gastronomia e tecnologia.</p>
+            <a class="btn" href="https://github.com/KalebeFurlanOliveira/GeekGourmet">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Sistema NPI</h4>
+            <p>Sistema institucional com organização e fluxo interno.</p>
+            <a class="btn" href="https://github.com/KalebeFurlanOliveira/Sistema-NPI">Ver Projeto</a>
+        </div>
+
+        <div class="proj-card">
+            <h4>Robô de Automação</h4>
+            <p>Automação em Python para tarefas repetitivas.</p>
+            <a class="btn" href="https://github.com/KalebeFurlanOliveira/RobozinhoAutomacaoPython">Ver Projeto</a>
+        </div>
+    </div>
+
+    <!-- EVENTOS -->
+    <h2 class="sec-title">Eventos & Participações</h2>
+    <div class="card fade">
+        <h3>Eventos de Inovação & Tecnologia — 2024</h3>
+
+        <p><strong>Ideathon Smart Agro (Março/2024)</strong></p>
+        <p>Desenvolvimento de soluções inovadoras para o agronegócio utilizando IoT, automação e sustentabilidade.</p>
+
+        <br>
+
+        <p><strong>Hackathon Smart Agro (Abril/2024)</strong></p>
+        <p>Criação de protótipo para conectividade rural e gestão inteligente durante a ExpoLondrina.</p>
+    </div>
+
+    <!-- SISTEMA DE PRESENÇA -->
+    <h2 class="sec-title">Sistema de Presença — NPI</h2>
+    <div class="card fade">
+        <p>
+            Desenvolvimento de um sistema completo de registro de presença com autenticação,
+            persistência de dados, relatórios e interface intuitiva.  
+            Criado para substituir processos manuais e trazer eficiência ao ambiente acadêmico.
+        </p>
+        <a class="btn" href="Relatório Estágio.pdf" target="_blank">📄 Documentação do Sistema (PDF)</a>
+    </div>
+
+    <!-- TCC -->
+    <h2 class="sec-title">TCC — Impacto da Tecnologia na Medicina Moderna</h2>
+    <div class="card fade">
+        <p>
+            Pesquisa detalhada sobre como a IA, telemedicina e sistemas digitais têm transformado a prática médica,
+            ampliando precisão diagnóstica e reduzindo erros.  
+            O trabalho também investiga desafios de implementação, custos e resistência profissional.
+        </p>
+        <a class="btn" href="TCC.pdf" target="_blank">📄 Abrir TCC (PDF)</a>
+    </div>
+
+</section>
+
+<footer>
+    <p>Portfólio desenvolvido para fins acadêmicos — UniFil</p>
+</footer>
+
+</body>
+</html>
